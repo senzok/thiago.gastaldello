@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago's Blog & Genealogy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 0.5rem;
+        }
+        .blog-post {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Tree Styles */
+        .tree {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .tree li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #eee;
+            border-radius: 8px;
+        }
+        .tree li::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            border-left: 2px solid #333;
+            border-top: 2px solid #333;
+            width: 20px;
+            height: 20px;
+        }
+        .tree li::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: 50%;
+            border-right: 2px solid #333;
+            border-top: 2px solid #333;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thiago's Blog & Genealogy</h1>
+    </header>
+
+    <nav>
+        <a href="#blog">Blog</a>
+        <a href="#genealogy">Genealogia</a>
+    </nav>
+
+    <div class="container">
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blogue Pessoal</h2>
+            <div class="blog-post">
+                <h3>Postagem de Exemplo</h3>
+                <p>Bem-vindo ao meu blog! Este é um exemplo de como será minha escrita. Vou compartilhar pensamentos, reflexões e histórias sobre o que me interessa.</p>
+            </div>
+        </section>
+
+        <!-- Genealogy Section -->
+        <section id="genealogy">
+            <h2>Genealogia</h2>
+            <ul class="tree">
+                <li>Avô Paterno
+                    <ul>
+                        <li>Pai
+                            <ul>
+                                <li>Thiago</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Avô Materno
+                    <ul>
+                        <li>Mãe
+                            <ul>
+                                <li>Thiago</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Thiago's Blog & Genealogy</p>
+    </footer>
+
+</body>
+</html>
